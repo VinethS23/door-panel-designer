@@ -1,0 +1,95 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.label {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.frame {
+  box-shadow: 6px 8px 28px rgba(0,0,0,0.35);
+}
+
+.door {
+  background: linear-gradient(105deg, var(--door-wood) 0%, var(--door-mid) 40%, #d4a96a 55%, var(--door-wood) 100%);
+  position: relative;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.door::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    92deg,
+    transparent,
+    transparent 18px,
+    rgba(0,0,0,0.04) 18px,
+    rgba(0,0,0,0.04) 19px
+  );
+  pointer-events: none;
+}
+
+.panelZone {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.panel {
+  background: var(--panel-col);
+  border: 1.5px solid rgba(255,255,255,0.7);
+  border-radius: 1px;
+  box-shadow:
+    inset 1px 1px 0 rgba(255,255,255,0.6),
+    inset -1px -1px 0 rgba(0,0,0,0.1),
+    2px 3px 10px var(--panel-shadow);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.panel::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(255,255,255,0.4);
+  pointer-events: none;
+}
+
+.gapZone {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gapLabel {
+  font-size: 0.55rem;
+  color: rgba(44,36,22,0.3);
+  letter-spacing: 0.06em;
+}
+
+.knob {
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle at 35% 35%, #f5d682, #a07820);
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}

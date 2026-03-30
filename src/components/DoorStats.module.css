@@ -1,0 +1,67 @@
+.stats {
+  background: var(--panel-bg);
+  border: 1px solid rgba(44,36,22,0.1);
+  border-radius: 3px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  line-height: 1.7;
+}
+
+.label {
+  color: var(--muted);
+}
+
+.value {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.overflow {
+  color: #c0392b;
+}
+
+.bar {
+  height: 4px;
+  background: rgba(44,36,22,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.pdfBtn {
+  margin-top: 4px;
+  padding: 8px 14px;
+  background: var(--accent);
+  color: #f5f0eb;
+  border: none;
+  border-radius: 3px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.pdfBtn:hover {
+  opacity: 0.85;
+}

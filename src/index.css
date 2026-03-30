@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f5f0eb;
+  --surface: #ede8e1;
+  --panel-bg: #e8e2d9;
+  --door-wood: #c9a96e;
+  --door-dark: #8b6914;
+  --door-mid: #b8883a;
+  --text: #2c2416;
+  --muted: #7a6a52;
+  --accent: #5c3d11;
+  --panel-col: rgba(255,255,255,0.55);
+  --panel-shadow: rgba(44,36,22,0.18);
+}
+
+body {
+  font-family: 'DM Mono', monospace;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}

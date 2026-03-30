@@ -1,0 +1,72 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--surface);
+  border: 1px solid rgba(44,36,22,0.12);
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: var(--muted);
+  transition: all 0.15s ease;
+}
+
+.tab:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #f5f0eb;
+}
+
+.name {
+  outline: none;
+  min-width: 40px;
+}
+
+.name:focus {
+  border-bottom: 1px solid currentColor;
+}
+
+.remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 2px;
+  opacity: 0.6;
+}
+
+.remove:hover {
+  opacity: 1;
+}
+
+.add {
+  padding: 6px 12px;
+  background: none;
+  border: 1px dashed rgba(44,36,22,0.25);
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  transition: all 0.15s ease;
+}
+
+.add:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
