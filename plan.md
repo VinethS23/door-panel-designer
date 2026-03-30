@@ -87,3 +87,6 @@ None.
 
 ## Open Questions
 - None
+
+## Notion Workspace
+https://www.notion.so/333680b2814181cb89aadb0afba7c1c9
